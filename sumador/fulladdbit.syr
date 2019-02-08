@@ -1,0 +1,467 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+Reading design: fulladdbit.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "fulladdbit.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "fulladdbit"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : fulladdbit
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/pablo/sumador/sumbit.vhd" in Library work.
+Architecture behavioral of Entity sumbit is up to date.
+Compiling vhdl file "/home/pablo/sumador/cod_display.vhd" in Library work.
+Architecture behavioral of Entity cod_display is up to date.
+Compiling vhdl file "/home/pablo/sumador/slow_clock.vhd" in Library work.
+Architecture behavioral of Entity slow_clock is up to date.
+Compiling vhdl file "/home/pablo/sumador/display.vhd" in Library work.
+Architecture behavioral of Entity display is up to date.
+Compiling vhdl file "/home/pablo/sumador/fulladdbit.vhd" in Library work.
+Architecture behavior of Entity fulladdbit is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <fulladdbit> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <sumbit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <cod_display> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <slow_clock> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <display> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <fulladdbit> in library <work> (Architecture <behavior>).
+Entity <fulladdbit> analyzed. Unit <fulladdbit> generated.
+
+Analyzing Entity <sumbit> in library <work> (Architecture <behavioral>).
+Entity <sumbit> analyzed. Unit <sumbit> generated.
+
+Analyzing Entity <cod_display> in library <work> (Architecture <behavioral>).
+Entity <cod_display> analyzed. Unit <cod_display> generated.
+
+Analyzing Entity <slow_clock> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "/home/pablo/sumador/slow_clock.vhd" line 45: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <clk_out>
+Entity <slow_clock> analyzed. Unit <slow_clock> generated.
+
+Analyzing Entity <display> in library <work> (Architecture <behavioral>).
+Entity <display> analyzed. Unit <display> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <sumbit>.
+    Related source file is "/home/pablo/sumador/sumbit.vhd".
+    Found 1-bit xor3 for signal <s1>.
+    Summary:
+	inferred   1 Xor(s).
+Unit <sumbit> synthesized.
+
+
+Synthesizing Unit <cod_display>.
+    Related source file is "/home/pablo/sumador/cod_display.vhd".
+    Found 16x7-bit ROM for signal <seg_a>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <cod_display> synthesized.
+
+
+Synthesizing Unit <slow_clock>.
+    Related source file is "/home/pablo/sumador/slow_clock.vhd".
+    Found 1-bit register for signal <clk_out>.
+    Found 16-bit up counter for signal <cuenta>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <slow_clock> synthesized.
+
+
+Synthesizing Unit <display>.
+    Related source file is "/home/pablo/sumador/display.vhd".
+    Found 4-bit register for signal <disp>.
+    Found 7-bit register for signal <seg>.
+    Summary:
+	inferred  11 D-type flip-flop(s).
+Unit <display> synthesized.
+
+
+Synthesizing Unit <fulladdbit>.
+    Related source file is "/home/pablo/sumador/fulladdbit.vhd".
+Unit <fulladdbit> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 1
+ 16-bit up counter                                     : 1
+# Registers                                            : 3
+ 1-bit register                                        : 1
+ 4-bit register                                        : 1
+ 7-bit register                                        : 1
+# Xors                                                 : 3
+ 1-bit xor3                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <disp_2> in Unit <DIS> is equivalent to the following FF/Latch, which will be removed : <disp_3> 
+WARNING:Xst:1710 - FF/Latch <disp_2> (without init value) has a constant value of 1 in block <DIS>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 1
+ 16-bit up counter                                     : 1
+# Registers                                            : 12
+ Flip-Flops                                            : 12
+# Xors                                                 : 3
+ 1-bit xor3                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <disp_2> (without init value) has a constant value of 1 in block <display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <disp_3> (without init value) has a constant value of 1 in block <display>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <fulladdbit> ...
+
+Optimizing unit <display> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block fulladdbit, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 26
+ Flip-Flops                                            : 26
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : fulladdbit.ngr
+Top Level Output File Name         : fulladdbit
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 20
+
+Cell Usage :
+# BELS                             : 95
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 15
+#      LUT2                        : 18
+#      LUT3                        : 6
+#      LUT4                        : 16
+#      LUT4_L                      : 1
+#      MUXCY                       : 15
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 16
+# FlipFlops/Latches                : 26
+#      FD                          : 3
+#      FDC                         : 16
+#      FDCE                        : 1
+#      FDR                         : 3
+#      FDS                         : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 19
+#      IBUF                        : 8
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                       32  out of    960     3%  
+ Number of Slice Flip Flops:             26  out of   1920     1%  
+ Number of 4 input LUTs:                 58  out of   1920     3%  
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of     83    24%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 26    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RST                                | IBUF                   | 17    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.463ns (Maximum Frequency: 183.050MHz)
+   Minimum input arrival time before clock: 8.161ns
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 5.463ns (frequency: 183.050MHz)
+  Total number of paths / destination ports: 421 / 29
+-------------------------------------------------------------------------
+Delay:               5.463ns (Levels of Logic = 17)
+  Source:            SLC/cuenta_1 (FF)
+  Destination:       SLC/cuenta_15 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: SLC/cuenta_1 to SLC/cuenta_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.622  SLC/cuenta_1 (SLC/cuenta_1)
+     LUT1:I0->O            1   0.704   0.000  SLC/Mcount_cuenta_cy<1>_rt (SLC/Mcount_cuenta_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  SLC/Mcount_cuenta_cy<1> (SLC/Mcount_cuenta_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  SLC/Mcount_cuenta_cy<2> (SLC/Mcount_cuenta_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  SLC/Mcount_cuenta_cy<3> (SLC/Mcount_cuenta_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  SLC/Mcount_cuenta_cy<4> (SLC/Mcount_cuenta_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  SLC/Mcount_cuenta_cy<5> (SLC/Mcount_cuenta_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  SLC/Mcount_cuenta_cy<6> (SLC/Mcount_cuenta_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  SLC/Mcount_cuenta_cy<7> (SLC/Mcount_cuenta_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  SLC/Mcount_cuenta_cy<8> (SLC/Mcount_cuenta_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  SLC/Mcount_cuenta_cy<9> (SLC/Mcount_cuenta_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  SLC/Mcount_cuenta_cy<10> (SLC/Mcount_cuenta_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  SLC/Mcount_cuenta_cy<11> (SLC/Mcount_cuenta_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  SLC/Mcount_cuenta_cy<12> (SLC/Mcount_cuenta_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  SLC/Mcount_cuenta_cy<13> (SLC/Mcount_cuenta_cy<13>)
+     MUXCY:CI->O           0   0.059   0.000  SLC/Mcount_cuenta_cy<14> (SLC/Mcount_cuenta_cy<14>)
+     XORCY:CI->O           1   0.804   0.499  SLC/Mcount_cuenta_xor<15> (Result<15>)
+     LUT2:I1->O            1   0.704   0.000  SLC/Mcount_cuenta_eqn_151 (SLC/Mcount_cuenta_eqn_15)
+     FDC:D                     0.308          SLC/cuenta_15
+    ----------------------------------------
+    Total                      5.463ns (4.342ns logic, 1.121ns route)
+                                       (79.5% logic, 20.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 190 / 11
+-------------------------------------------------------------------------
+Offset:              8.161ns (Levels of Logic = 5)
+  Source:            q0 (PAD)
+  Destination:       DIS/seg_3 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: q0 to DIS/seg_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.762  q0_IBUF (q0_IBUF)
+     LUT3:I0->O            2   0.704   0.622  SB1/Cout1 (Cout1)
+     LUT3:I0->O           10   0.704   0.886  SB2/Mxor_s1_xo<0>1 (ST1)
+     LUT4:I3->O            1   0.704   0.499  CD/seg_b<2>1 (seg_b<1>)
+     LUT2:I1->O            2   0.704   0.447  DIS/seg_mux0001<6>_SW1 (DIS/seg_mux0001<1>0)
+     FDS:S                     0.911          DIS/seg_1
+    ----------------------------------------
+    Total                      8.161ns (4.945ns logic, 3.216ns route)
+                                       (60.6% logic, 39.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            DIS/disp_1 (FF)
+  Destination:       disp<1> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: DIS/disp_1 to disp<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.591   0.420  DIS/disp_1 (DIS/disp_1)
+     OBUF:I->O                 3.272          disp_1_OBUF (disp<1>)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.10 secs
+ 
+--> 
+
+
+Total memory usage is 529656 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

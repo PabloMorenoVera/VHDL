@@ -1,0 +1,10 @@
+AR cod_display behavioral /home/pablo/sumador/cod_display.vhd sub00/vhpl03 1549363084
+EN display NULL /home/pablo/sumador/display.vhd sub00/vhpl06 1549363087
+AR display behavioral /home/pablo/sumador/display.vhd sub00/vhpl07 1549363088
+AR fulladdbit behavior /home/pablo/sumador/fulladdbit.vhd sub00/vhpl09 1549363090
+AR sumbit behavioral /home/pablo/sumador/sumbit.vhd sub00/vhpl01 1549363082
+AR slow_clock behavioral /home/pablo/sumador/slow_clock.vhd sub00/vhpl05 1549363086
+EN sumbit NULL /home/pablo/sumador/sumbit.vhd sub00/vhpl00 1549363081
+EN slow_clock NULL /home/pablo/sumador/slow_clock.vhd sub00/vhpl04 1549363085
+EN fulladdbit NULL /home/pablo/sumador/fulladdbit.vhd sub00/vhpl08 1549363089
+EN cod_display NULL /home/pablo/sumador/cod_display.vhd sub00/vhpl02 1549363083

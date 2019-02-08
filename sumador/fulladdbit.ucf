@@ -1,0 +1,23 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "seg[0]" LOC = M12;
+NET "seg[1]" LOC = L13;
+NET "seg[2]" LOC = P12;
+NET "seg[3]" LOC = N11;
+NET "seg[4]" LOC = N14;
+NET "seg[5]" LOC = H12;
+NET "seg[6]" LOC = L14;
+NET "CLK" LOC = B8;
+NET "p0" LOC = N3;
+NET "p1" LOC = E2;
+NET "p2" LOC = F3;
+NET "q0" LOC = G3;
+NET "q1" LOC = B4;
+NET "q2" LOC = K3;
+NET "RST" LOC = G12;
+NET "disp[0]" LOC = K14;
+NET "disp[1]" LOC = M13;
+NET "disp[2]" LOC = J12;
+NET "disp[3]" LOC = F12;
+NET "Rin" LOC = P11;

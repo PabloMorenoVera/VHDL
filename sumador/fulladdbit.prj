@@ -1,0 +1,5 @@
+vhdl work "sumbit.vhd"
+vhdl work "slow_clock.vhd"
+vhdl work "display.vhd"
+vhdl work "cod_display.vhd"
+vhdl work "fulladdbit.vhd"
