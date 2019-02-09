@@ -1,0 +1,43 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/pablo/contador/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/pablo/contador/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/pablo/contador/cont.vhd" in Library work.
+Entity <cont> compiled.
+ERROR:HDLParsers:164 - "/home/pablo/contador/cont.vhd" Line 44. parse error, unexpected SIGNAL
+ERROR:HDLParsers:3312 - "/home/pablo/contador/cont.vhd" Line 53. Undefined symbol 'clk_out'.
+ERROR:HDLParsers:164 - "/home/pablo/contador/cont.vhd" Line 54. parse error, unexpected ELSIF
+ERROR:HDLParsers:1209 - "/home/pablo/contador/cont.vhd" Line 57. clk_out: Undefined symbol (last report in this block)
+ERROR:HDLParsers:164 - "/home/pablo/contador/cont.vhd" Line 58. parse error, unexpected ELSE
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> 
+
+
+Total memory usage is 486656 kilobytes
+
+Number of errors   :    5 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

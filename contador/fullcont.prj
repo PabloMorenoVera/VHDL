@@ -1,0 +1,6 @@
+vhdl work "../sumador/slow_clock.vhd"
+vhdl work "../sumador/display.vhd"
+vhdl work "../sumador/cod_display.vhd"
+vhdl work "mux.vhd"
+vhdl work "cont.vhd"
+vhdl work "fullcont.vhd"

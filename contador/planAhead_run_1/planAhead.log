@@ -1,0 +1,122 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Sat Feb  9 12:55:09 2019
+# Process ID: 2334
+# Log file: /home/pablo/contador/planAhead_run_1/planAhead.log
+# Journal file: /home/pablo/contador/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/pablo/contador/pa.fromHdl.tcl
+# create_project -name contador -dir "/home/pablo/contador/planAhead_run_1" -part xc3s100ecp132-4
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "fullcont.ucf" [current_fileset -constrset]
+Adding file '/home/pablo/contador/fullcont.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {../sumador/slow_clock.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../sumador/display.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../sumador/cod_display.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {mux.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {cont.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {fullcont.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top fullcont $srcset
+# add_files [list {fullcont.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s100ecp132-4
+Using Verific elaboration
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "/home/pablo/sumador/slow_clock.vhd" into library work
+Parsing VHDL file "/home/pablo/sumador/display.vhd" into library work
+Parsing VHDL file "/home/pablo/sumador/cod_display.vhd" into library work
+Parsing VHDL file "/home/pablo/contador/mux.vhd" into library work
+Parsing VHDL file "/home/pablo/contador/cont.vhd" into library work
+Parsing VHDL file "/home/pablo/contador/fullcont.vhd" into library work
+INFO: [Designutils 20-910] Reading macro library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s100e/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s100e/ClockBuffers.xml
+Loading package from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s100e/cp132/Package.xml
+Loading io standards from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s100e/cp132/SSORules.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [/home/pablo/contador/fullcont.ucf]
+Finished Parsing UCF File [/home/pablo/contador/fullcont.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 385a25c2
+open_rtl_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 2814.453 ; gain = 133.504
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin B8 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin G12 [get_ports reset]
+endgroup
+startgroup
+set_property package_pin F12 [get_ports {dispend[3]}]
+endgroup
+startgroup
+set_property package_pin J12 [get_ports {dispend[2]}]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports {dispend[1]}]
+endgroup
+startgroup
+set_property package_pin K14 [get_ports {dispend[0]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {segend[0]}]
+endgroup
+startgroup
+set_property package_pin H12 [get_ports {segend[1]}]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports {segend[2]}]
+endgroup
+startgroup
+set_property package_pin N11 [get_ports {segend[3]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {segend[4]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {segend[4]}]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports {segend[5]}]
+endgroup
+startgroup
+set_property package_pin M12 [get_ports {segend[6]}]
+endgroup
+save_constraints
+exit
+ERROR: [#UNDEF] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+ (See /home/pablo/contador/planAhead_pid2334.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sat Feb  9 12:57:52 2019...
+INFO: [Common 17-83] Releasing license: PlanAhead

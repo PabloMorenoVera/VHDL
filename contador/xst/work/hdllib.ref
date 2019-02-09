@@ -1,0 +1,12 @@
+AR cod_display behavioral /home/pablo/sumador/cod_display.vhd sub00/vhpl07 1549724032
+AR mux behavioral /home/pablo/contador/mux.vhd sub00/vhpl05 1549724030
+EN display NULL /home/pablo/sumador/display.vhd sub00/vhpl08 1549724033
+AR display behavioral /home/pablo/sumador/display.vhd sub00/vhpl09 1549724034
+EN fullcont NULL /home/pablo/contador/fullcont.vhd sub00/vhpl10 1549724035
+AR slow_clock behavioral /home/pablo/sumador/slow_clock.vhd sub00/vhpl03 1549724028
+EN slow_clock NULL /home/pablo/sumador/slow_clock.vhd sub00/vhpl02 1549724027
+EN mux NULL /home/pablo/contador/mux.vhd sub00/vhpl04 1549724029
+EN cod_display NULL /home/pablo/sumador/cod_display.vhd sub00/vhpl06 1549724031
+AR cont behavioral /home/pablo/contador/cont.vhd sub00/vhpl01 1549724026
+EN cont NULL /home/pablo/contador/cont.vhd sub00/vhpl00 1549724025
+AR fullcont behavioral /home/pablo/contador/fullcont.vhd sub00/vhpl11 1549724036

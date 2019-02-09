@@ -1,0 +1,5 @@
+set -tmpdir "/home/pablo/contador/xst/projnav.tmp"
+set -xsthdpdir "/home/pablo/contador/xst"
+elaborate
+-ifn cont.prj
+-ifmt mixed

@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Feb 09 15:54:04 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "segend<0>" LOCATE = SITE "M12" LEVEL 1;
+COMP "segend<1>" LOCATE = SITE "L13" LEVEL 1;
+COMP "dispend<0>" LOCATE = SITE "K14" LEVEL 1;
+COMP "segend<2>" LOCATE = SITE "P12" LEVEL 1;
+COMP "dispend<1>" LOCATE = SITE "M13" LEVEL 1;
+COMP "segend<3>" LOCATE = SITE "N11" LEVEL 1;
+COMP "dispend<2>" LOCATE = SITE "J12" LEVEL 1;
+COMP "segend<4>" LOCATE = SITE "N14" LEVEL 1;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "dispend<3>" LOCATE = SITE "F12" LEVEL 1;
+COMP "segend<5>" LOCATE = SITE "H12" LEVEL 1;
+COMP "segend<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "reset" LOCATE = SITE "G12" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

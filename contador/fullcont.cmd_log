@@ -1,0 +1,137 @@
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+netgen -intstyle ise -ar Structure -tm fullcont -w -dir netgen/synthesis -ofmt vhdl -sim fullcont.ngc fullcont_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fullcont.ucf -p xc3s100e-cp132-4 fullcont.ngc fullcont.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fullcont_map.ncd fullcont.ngd fullcont.pcf 
+par -w -intstyle ise -ol high -t 1 fullcont_map.ncd fullcont.ncd fullcont.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fullcont.twx fullcont.ncd -o fullcont.twr fullcont.pcf -ucf fullcont.ucf 
+bitgen -intstyle ise -f fullcont.ut fullcont.ncd 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+netgen -intstyle ise -ar Structure -tm fullcont -w -dir netgen/synthesis -ofmt vhdl -sim fullcont.ngc fullcont_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fullcont.ucf -p xc3s100e-cp132-4 fullcont.ngc fullcont.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fullcont_map.ncd fullcont.ngd fullcont.pcf 
+par -w -intstyle ise -ol high -t 1 fullcont_map.ncd fullcont.ncd fullcont.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fullcont.twx fullcont.ncd -o fullcont.twr fullcont.pcf -ucf fullcont.ucf 
+bitgen -intstyle ise -f fullcont.ut fullcont.ncd 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+netgen -intstyle ise -ar Structure -tm fullcont -w -dir netgen/synthesis -ofmt vhdl -sim fullcont.ngc fullcont_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fullcont.ucf -p xc3s100e-cp132-4 fullcont.ngc fullcont.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fullcont_map.ncd fullcont.ngd fullcont.pcf 
+par -w -intstyle ise -ol high -t 1 fullcont_map.ncd fullcont.ncd fullcont.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fullcont.twx fullcont.ncd -o fullcont.twr fullcont.pcf -ucf fullcont.ucf 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+netgen -intstyle ise -ar Structure -tm fullcont -w -dir netgen/synthesis -ofmt vhdl -sim fullcont.ngc fullcont_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fullcont.ucf -p xc3s100e-cp132-4 fullcont.ngc fullcont.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fullcont_map.ncd fullcont.ngd fullcont.pcf 
+par -w -intstyle ise -ol high -t 1 fullcont_map.ncd fullcont.ncd fullcont.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fullcont.twx fullcont.ncd -o fullcont.twr fullcont.pcf -ucf fullcont.ucf 
+bitgen -intstyle ise -f fullcont.ut fullcont.ncd 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+netgen -intstyle ise -ar Structure -tm fullcont -w -dir netgen/synthesis -ofmt vhdl -sim fullcont.ngc fullcont_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fullcont.ucf -p xc3s100e-cp132-4 fullcont.ngc fullcont.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fullcont_map.ncd fullcont.ngd fullcont.pcf 
+par -w -intstyle ise -ol high -t 1 fullcont_map.ncd fullcont.ncd fullcont.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fullcont.twx fullcont.ncd -o fullcont.twr fullcont.pcf -ucf fullcont.ucf 
+bitgen -intstyle ise -f fullcont.ut fullcont.ncd 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+netgen -intstyle ise -ar Structure -tm fullcont -w -dir netgen/synthesis -ofmt vhdl -sim fullcont.ngc fullcont_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fullcont.ucf -p xc3s100e-cp132-4 fullcont.ngc fullcont.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fullcont_map.ncd fullcont.ngd fullcont.pcf 
+par -w -intstyle ise -ol high -t 1 fullcont_map.ncd fullcont.ncd fullcont.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fullcont.twx fullcont.ncd -o fullcont.twr fullcont.pcf -ucf fullcont.ucf 
+bitgen -intstyle ise -f fullcont.ut fullcont.ncd 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+netgen -intstyle ise -ar Structure -tm fullcont -w -dir netgen/synthesis -ofmt vhdl -sim fullcont.ngc fullcont_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fullcont.ucf -p xc3s100e-cp132-4 fullcont.ngc fullcont.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fullcont_map.ncd fullcont.ngd fullcont.pcf 
+par -w -intstyle ise -ol high -t 1 fullcont_map.ncd fullcont.ncd fullcont.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fullcont.twx fullcont.ncd -o fullcont.twr fullcont.pcf -ucf fullcont.ucf 
+bitgen -intstyle ise -f fullcont.ut fullcont.ncd 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+netgen -intstyle ise -ar Structure -tm fullcont -w -dir netgen/synthesis -ofmt vhdl -sim fullcont.ngc fullcont_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fullcont.ucf -p xc3s100e-cp132-4 fullcont.ngc fullcont.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fullcont_map.ncd fullcont.ngd fullcont.pcf 
+par -w -intstyle ise -ol high -t 1 fullcont_map.ncd fullcont.ncd fullcont.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fullcont.twx fullcont.ncd -o fullcont.twr fullcont.pcf -ucf fullcont.ucf 
+bitgen -intstyle ise -f fullcont.ut fullcont.ncd 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+netgen -intstyle ise -ar Structure -tm fullcont -w -dir netgen/synthesis -ofmt vhdl -sim fullcont.ngc fullcont_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fullcont.ucf -p xc3s100e-cp132-4 fullcont.ngc fullcont.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fullcont_map.ncd fullcont.ngd fullcont.pcf 
+par -w -intstyle ise -ol high -t 1 fullcont_map.ncd fullcont.ncd fullcont.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fullcont.twx fullcont.ncd -o fullcont.twr fullcont.pcf -ucf fullcont.ucf 
+bitgen -intstyle ise -f fullcont.ut fullcont.ncd 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+netgen -intstyle ise -ar Structure -tm fullcont -w -dir netgen/synthesis -ofmt vhdl -sim fullcont.ngc fullcont_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fullcont.ucf -p xc3s100e-cp132-4 fullcont.ngc fullcont.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fullcont_map.ncd fullcont.ngd fullcont.pcf 
+par -w -intstyle ise -ol high -t 1 fullcont_map.ncd fullcont.ncd fullcont.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fullcont.twx fullcont.ncd -o fullcont.twr fullcont.pcf -ucf fullcont.ucf 
+bitgen -intstyle ise -f fullcont.ut fullcont.ncd 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+netgen -intstyle ise -ar Structure -tm fullcont -w -dir netgen/synthesis -ofmt vhdl -sim fullcont.ngc fullcont_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fullcont.ucf -p xc3s100e-cp132-4 fullcont.ngc fullcont.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fullcont_map.ncd fullcont.ngd fullcont.pcf 
+par -w -intstyle ise -ol high -t 1 fullcont_map.ncd fullcont.ncd fullcont.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fullcont.twx fullcont.ncd -o fullcont.twr fullcont.pcf -ucf fullcont.ucf 
+bitgen -intstyle ise -f fullcont.ut fullcont.ncd 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+netgen -intstyle ise -ar Structure -tm fullcont -w -dir netgen/synthesis -ofmt vhdl -sim fullcont.ngc fullcont_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fullcont.ucf -p xc3s100e-cp132-4 fullcont.ngc fullcont.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fullcont_map.ncd fullcont.ngd fullcont.pcf 
+par -w -intstyle ise -ol high -t 1 fullcont_map.ncd fullcont.ncd fullcont.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fullcont.twx fullcont.ncd -o fullcont.twr fullcont.pcf -ucf fullcont.ucf 
+bitgen -intstyle ise -f fullcont.ut fullcont.ncd 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+netgen -intstyle ise -ar Structure -tm fullcont -w -dir netgen/synthesis -ofmt vhdl -sim fullcont.ngc fullcont_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fullcont.ucf -p xc3s100e-cp132-4 fullcont.ngc fullcont.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fullcont_map.ncd fullcont.ngd fullcont.pcf 
+par -w -intstyle ise -ol high -t 1 fullcont_map.ncd fullcont.ncd fullcont.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fullcont.twx fullcont.ncd -o fullcont.twr fullcont.pcf -ucf fullcont.ucf 
+bitgen -intstyle ise -f fullcont.ut fullcont.ncd 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+netgen -intstyle ise -ar Structure -tm fullcont -w -dir netgen/synthesis -ofmt vhdl -sim fullcont.ngc fullcont_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fullcont.ucf -p xc3s100e-cp132-4 fullcont.ngc fullcont.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fullcont_map.ncd fullcont.ngd fullcont.pcf 
+par -w -intstyle ise -ol high -t 1 fullcont_map.ncd fullcont.ncd fullcont.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fullcont.twx fullcont.ncd -o fullcont.twr fullcont.pcf -ucf fullcont.ucf 
+bitgen -intstyle ise -f fullcont.ut fullcont.ncd 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+netgen -intstyle ise -ar Structure -tm fullcont -w -dir netgen/synthesis -ofmt vhdl -sim fullcont.ngc fullcont_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fullcont.ucf -p xc3s100e-cp132-4 fullcont.ngc fullcont.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fullcont_map.ncd fullcont.ngd fullcont.pcf 
+par -w -intstyle ise -ol high -t 1 fullcont_map.ncd fullcont.ncd fullcont.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fullcont.twx fullcont.ncd -o fullcont.twr fullcont.pcf -ucf fullcont.ucf 
+bitgen -intstyle ise -f fullcont.ut fullcont.ncd 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+netgen -intstyle ise -ar Structure -tm fullcont -w -dir netgen/synthesis -ofmt vhdl -sim fullcont.ngc fullcont_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fullcont.ucf -p xc3s100e-cp132-4 fullcont.ngc fullcont.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fullcont_map.ncd fullcont.ngd fullcont.pcf 
+par -w -intstyle ise -ol high -t 1 fullcont_map.ncd fullcont.ncd fullcont.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fullcont.twx fullcont.ncd -o fullcont.twr fullcont.pcf -ucf fullcont.ucf 
+bitgen -intstyle ise -f fullcont.ut fullcont.ncd 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+netgen -intstyle ise -ar Structure -tm fullcont -w -dir netgen/synthesis -ofmt vhdl -sim fullcont.ngc fullcont_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fullcont.ucf -p xc3s100e-cp132-4 fullcont.ngc fullcont.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fullcont_map.ncd fullcont.ngd fullcont.pcf 
+par -w -intstyle ise -ol high -t 1 fullcont_map.ncd fullcont.ncd fullcont.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fullcont.twx fullcont.ncd -o fullcont.twr fullcont.pcf -ucf fullcont.ucf 
+bitgen -intstyle ise -f fullcont.ut fullcont.ncd 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+netgen -intstyle ise -ar Structure -tm fullcont -w -dir netgen/synthesis -ofmt vhdl -sim fullcont.ngc fullcont_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fullcont.ucf -p xc3s100e-cp132-4 fullcont.ngc fullcont.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fullcont_map.ncd fullcont.ngd fullcont.pcf 
+par -w -intstyle ise -ol high -t 1 fullcont_map.ncd fullcont.ncd fullcont.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fullcont.twx fullcont.ncd -o fullcont.twr fullcont.pcf -ucf fullcont.ucf 
+bitgen -intstyle ise -f fullcont.ut fullcont.ncd 
+xst -intstyle ise -ifn "/home/pablo/contador/fullcont.xst" -ofn "/home/pablo/contador/fullcont.syr" 
+netgen -intstyle ise -ar Structure -tm fullcont -w -dir netgen/synthesis -ofmt vhdl -sim fullcont.ngc fullcont_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fullcont.ucf -p xc3s100e-cp132-4 fullcont.ngc fullcont.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o fullcont_map.ncd fullcont.ngd fullcont.pcf 
+par -w -intstyle ise -ol high -t 1 fullcont_map.ncd fullcont.ncd fullcont.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fullcont.twx fullcont.ncd -o fullcont.twr fullcont.pcf -ucf fullcont.ucf 
+bitgen -intstyle ise -f fullcont.ut fullcont.ncd 

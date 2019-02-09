@@ -1,0 +1,32 @@
+V3 24
+FL /home/pablo/contador/cont.vhd 2019/02/09.14:44:48 P.20131013
+EN work/cont 1549724025 FL /home/pablo/contador/cont.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/cont/Behavioral 1549724026 \
+      FL /home/pablo/contador/cont.vhd EN work/cont 1549724025
+FL /home/pablo/contador/fullcont.vhd 2019/02/09.15:53:04 P.20131013
+EN work/fullcont 1549724035 FL /home/pablo/contador/fullcont.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/fullcont/Behavioral 1549724036 \
+      FL /home/pablo/contador/fullcont.vhd EN work/fullcont 1549724035 CP cont \
+      CP slow_clock CP mux CP cod_display CP display
+FL /home/pablo/contador/mux.vhd 2019/02/09.15:53:18 P.20131013
+EN work/mux 1549724029 FL /home/pablo/contador/mux.vhd PB ieee/std_logic_1164 1381692176
+AR work/mux/Behavioral 1549724030 \
+      FL /home/pablo/contador/mux.vhd EN work/mux 1549724029
+FL /home/pablo/Descargas/VHDL-master/sumador/display.vhd 2019/02/09.12:36:18 P.20131013
+FL /home/pablo/sumador/cod_display.vhd 2019/02/09.14:33:59 P.20131013
+EN work/cod_display 1549724031 FL /home/pablo/sumador/cod_display.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/cod_display/Behavioral 1549724032 \
+      FL /home/pablo/sumador/cod_display.vhd EN work/cod_display 1549724031
+FL /home/pablo/sumador/display.vhd 2019/02/09.13:29:36 P.20131013
+EN work/display 1549724033 FL /home/pablo/sumador/display.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/display/Behavioral 1549724034 \
+      FL /home/pablo/sumador/display.vhd EN work/display 1549724033
+FL /home/pablo/sumador/slow_clock.vhd 2019/02/09.15:53:34 P.20131013
+EN work/slow_clock 1549724027 FL /home/pablo/sumador/slow_clock.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/slow_clock/Behavioral 1549724028 \
+      FL /home/pablo/sumador/slow_clock.vhd EN work/slow_clock 1549724027

@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Sat Feb  9 12:55:09 2019
+# Process ID: 2334
+# Log file: /home/pablo/contador/planAhead_run_1/planAhead.log
+# Journal file: /home/pablo/contador/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/pablo/contador/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin B8 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin G12 [get_ports reset]
+endgroup
+startgroup
+set_property package_pin F12 [get_ports {dispend[3]}]
+endgroup
+startgroup
+set_property package_pin J12 [get_ports {dispend[2]}]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports {dispend[1]}]
+endgroup
+startgroup
+set_property package_pin K14 [get_ports {dispend[0]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {segend[0]}]
+endgroup
+startgroup
+set_property package_pin H12 [get_ports {segend[1]}]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports {segend[2]}]
+endgroup
+startgroup
+set_property package_pin N11 [get_ports {segend[3]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {segend[4]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {segend[4]}]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports {segend[5]}]
+endgroup
+startgroup
+set_property package_pin M12 [get_ports {segend[6]}]
+endgroup
+save_constraints

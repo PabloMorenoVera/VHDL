@@ -1,0 +1,16 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = B8;
+NET "reset" LOC = G12;
+NET "dispend[3]" LOC = F12;
+NET "dispend[2]" LOC = J12;
+NET "dispend[1]" LOC = M13;
+NET "dispend[0]" LOC = K14;
+NET "segend[0]" LOC = M12;
+NET "segend[1]" LOC = L13;
+NET "segend[2]" LOC = P12;
+NET "segend[3]" LOC = N11;
+NET "segend[4]" LOC = N14;
+NET "segend[5]" LOC = H12;
+NET "segend[6]" LOC = L14;
